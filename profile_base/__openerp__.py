@@ -35,6 +35,12 @@
      'shell',
      'scheduler_error_mailer',
      'cron_run_manually',
+     'base_partner_always_multi_contacts',
+     'base_usability',
+     'base_company_extension',
+     'base_fix_display_address',
+     'partner_search',
+     'web_translate_dialog',
  ],
  'data': [
  ],
