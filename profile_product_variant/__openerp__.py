@@ -15,7 +15,7 @@
  'depends': [
      'pricelist_per_product',
      'product_code_builder',
-     'product_variant_inactive',
+     'product_variant_usability',
      'product_variant_supplierinfo',
  ],
  'data': [
