@@ -13,6 +13,7 @@
     This module will install basic module needed for a project with variant
  """,
  'depends': [
+     'profile_base',
      'pricelist_per_product',
      'product_code_builder',
      'product_variant_usability',
