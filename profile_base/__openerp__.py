@@ -38,7 +38,6 @@
      'base_partner_always_multi_contacts',
      'base_usability',
      'base_company_extension',
-     'base_export_manager',
      'base_fix_display_address',
      'partner_search',
      'web_translate_dialog',
