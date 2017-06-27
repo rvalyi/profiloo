@@ -1,24 +1,7 @@
 # -*- coding: utf-8 -*-
-###############################################################################
-#
-#   Module for OpenERP
-#   Copyright (C) 2014 Akretion (http://www.akretion.com).
-#   @author Sébastien BEAU <sebastien.beau@akretion.com>
-#
-#   This program is free software: you can redistribute it and/or modify
-#   it under the terms of the GNU Affero General Public License as
-#   published by the Free Software Foundation, either version 3 of the
-#   License, or (at your option) any later version.
-#
-#   This program is distributed in the hope that it will be useful,
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of
-#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#   GNU Affero General Public License for more details.
-#
-#   You should have received a copy of the GNU Affero General Public License
-#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
+# Copyright 2017 Akretion (http://www.akretion.com).
+# @author Sébastien BEAU <sebastien.beau@akretion.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {'name': 'Accounting Profile',
  'version': '0.0.1',
@@ -31,21 +14,41 @@
  """,
  'depends': [
      'profile_base',
-     'invoice_fiscal_position_update',
-     'account_balance_line',
-     'account_check_deposit',
-     'account_constraints',
-     'account_default_draft_move',
+
+     # https://github.com/akretion/odoo-usability
+     'product_usability',
+     'sale_usability',
+     'account_usability',
+     'account_bank_statement_import_usability',
+
+     # https://github.com/OCA/sale-workflow
+     'sale_commercial_partner',
+
+     # base
+     'account_accountant',
+
+     # https://github.com/OCA/account-financial-tools
+     'account_partner_required',
      'account_fiscal_position_vat_check',
-     'account_journal_always_check_date',
-     'account_move_line_no_default_search',
+
+     # https://github.com/OCA/account-invoicing
+     'account_payment_term_extension',
+     'account_invoice_fiscal_position_update',
+
+     # https://github.com/OCA/account-financial-reporting
+     'account_financial_report_qweb',
      'account_move_line_payable_receivable_filter',
-     'account_reversal',
-     'account_export_csv',
-     'account_financial_report_webkit',
-     'account_financial_report_webkit_xls',
-     'account_journal_report_xls',
-     'account_move_line_report_xls',
+
+     # https://github.com/OCA/bank-statement-import
+     'account_bank_statement_import_save_file',
+     'account_bank_statement_import_ofx',
+     'account_bank_statement_no_reconcile_guess',
+
+     # https://github.com/OCA/bank-payment
+     'account_payment_partner',
+
+     # https://github.com/akretion/account-move-import
+     'account_move_csv_import'
  ],
  'data': [
  ],

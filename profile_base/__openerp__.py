@@ -1,24 +1,7 @@
 # -*- coding: utf-8 -*-
-###############################################################################
-#
-#   Module for OpenERP
-#   Copyright (C) 2014 Akretion (http://www.akretion.com).
-#   @author Sébastien BEAU <sebastien.beau@akretion.com>
-#
-#   This program is free software: you can redistribute it and/or modify
-#   it under the terms of the GNU Affero General Public License as
-#   published by the Free Software Foundation, either version 3 of the
-#   License, or (at your option) any later version.
-#
-#   This program is distributed in the hope that it will be useful,
-#   but WITHOUT ANY WARRANTY; without even the implied warranty of
-#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#   GNU Affero General Public License for more details.
-#
-#   You should have received a copy of the GNU Affero General Public License
-#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
+# Copyright 2017 Akretion (http://www.akretion.com).
+# @author Sébastien BEAU <sebastien.beau@akretion.com>
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {'name': 'Base Profile',
  'version': '0.0.1',
@@ -30,16 +13,25 @@
     This module will install the minimal necessary to extend the base module
  """,
  'depends': [
-     'admin_technical_features',
-     'disable_openerp_online',
-     'shell',
-     'scheduler_error_mailer',
-     'cron_run_manually',
-     'base_partner_always_multi_contacts',
+     # https://github.com/akretion/odoo-usability
      'base_usability',
+     'mail_usability',
+     'base_technical_features',
      'base_company_extension',
-     'base_fix_display_address',
-     'partner_search',
+     'eradicate_quick_create',
+     'partner_tree_default',
+     'base_partner_ref',
+
+     # https://github.com/OCA/partner-contact
+     'partner_firstname',
+
+     # https://github.com/OCA/server-tools
+     'scheduler_error_mailer',
+     'disable_odoo_online',
+
+     # https://github.com/OCA/web
+     'web_sheet_full_width',
+     'web_export_view',
      'web_translate_dialog',
  ],
  'data': [
