@@ -13,6 +13,8 @@
     This module will install the minimal necessary to extend the base module
  """,
  'depends': [
+     'document',
+
      # https://github.com/akretion/odoo-usability
      'base_usability',
      'mail_usability',
