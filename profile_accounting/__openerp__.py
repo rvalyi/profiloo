@@ -48,7 +48,10 @@
      'account_payment_partner',
 
      # https://github.com/akretion/account-move-import
-     'account_move_csv_import'
+     'account_move_csv_import',
+
+     # https://github.com/OCA/edi
+     'account_invoice_import_invoice2data',
  ],
  'data': [
  ],
