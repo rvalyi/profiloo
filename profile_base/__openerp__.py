@@ -30,11 +30,16 @@
      # https://github.com/OCA/server-tools
      'scheduler_error_mailer',
      'disable_odoo_online',
+     'auth_admin_passkey',
+     'sentry',
 
      # https://github.com/OCA/web
      'web_sheet_full_width',
      'web_export_view',
      'web_translate_dialog',
+     'web_environment_ribbon',
+     'web_responsive',
+
  ],
  'data': [
  ],
